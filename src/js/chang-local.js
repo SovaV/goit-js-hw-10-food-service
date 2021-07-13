@@ -8,8 +8,8 @@ const Theme = {
 
 checkBox.addEventListener('change', onChangeTheme, populateThemeLocal);
 populateThemeLocal();
-
 // змінити тему
+onChangeTheme(); // light-theme зразу добавляється
 function onChangeTheme() {
   if (checkBox.checked) {
     changeBodyTheme.className = Theme.DARK;
